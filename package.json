@@ -1,0 +1,28 @@
+{
+  "name": "burger",
+  "version": "1.0.0",
+  "description": "Easy to use App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alvivanco85/burger.git"
+  },
+  "keywords": [
+    "Yummy",
+    "Burgers!"
+  ],
+  "author": "Aldo Vibanco",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alvivanco85/burger/issues"
+  },
+  "homepage": "https://github.com/alvivanco85/burger#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.4",
+    "mysql": "^2.18.1"
+  }
+}

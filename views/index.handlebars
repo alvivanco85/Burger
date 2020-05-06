@@ -1,0 +1,32 @@
+<h1>Eat-Da-Burger!</h1>
+
+<form id="burger-form">
+  <label for="burger-name">Burger: </label>
+  <input type="text" id="burger-name" name="burger-name" maxlength="35">
+  <input id="submit-button" type="submit" value="Add Burger">
+</form>
+
+<div class="container">
+  <div class="left">
+    <h3>Available Burgers</h3>
+    {{#if msg}}
+      <p class="msg">{{msg}}</p>
+    {{/if}}
+    {{#each notEaten}} 
+      <div class="burger burger-not-eaten">
+        <p>{{this.burger_name}}</p>
+        <button class="devourButton" data-burgerid="{{this.id}}" data-devoured="{{this.devoured}}">Devour</button>
+      </div>
+    {{/each}}
+  </div>
+  <div class="right">
+    <h3>Devoured Burgers</h3>
+    {{#each devoured}} 
+      <div class="burger burger-eaten">
+        <p>{{this.burger_name}}</p>
+        <button class="deleteButton" data-burgerid="{{this.id}}"><img src="/assets/img/trash-alt.svg" alt=""></button>
+      </div>
+    {{/each}}
+  </div>
+</div>
+
